@@ -7,9 +7,8 @@ function App() {
     <div className="App">
       <Card>
         <AddUserForm/>
-        
       </Card>
-      <PopUpWindow title="Invalid" paragraph="lorem ipsum"/>
+      <PopUpWindow title="Invalid input" paragraph="lorem ipsum"/>
     </div>
   );
 }
