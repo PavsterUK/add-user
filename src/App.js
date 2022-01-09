@@ -1,14 +1,12 @@
-import Card from "./components/Card";
-import AddUserForm from "./components/AddUserForm";
-import PopUpWindow from "./components/PopUpWindow";
+import AddUser from "./components/NewUser/AddUser";
+import UserList from "./components/Users/UserList";
 
 function App() {
+
   return (
     <div className="App">
-      <Card>
-        <AddUserForm/>
-      </Card>
-      <PopUpWindow title="Invalid input" paragraph="lorem ipsum"/>
+      <AddUser/>
+      <UserList/>
     </div>
   );
 }
