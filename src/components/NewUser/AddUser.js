@@ -1,13 +1,16 @@
 import Card from "../UI/Card";
 import Form from "./Form";
 
+
 const AddUser = (props) => {
   
-
+  const onSubmitForm = (user) => {
+    props.onAddUser(user);
+  }
+  
   return (
     <Card>
-      <Form/>
-      
+      <Form onSubmit={onSubmitForm}/>
     </Card>
   );
 };
