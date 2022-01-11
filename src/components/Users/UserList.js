@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../UI/Card";
 import styles from "./UserList.module.css";
 
 const UserList = (props) => {
+  let users = props.items;
 
-  const userList = props.items;
-
-  if (userList.length > 0) {
+  if (users.length > 0) {
     return (
       <Card>
-        {userList.map((user) => (
+        {users.map((user) => (
           <div className={styles.user} key={Math.random()}>
             {user.name} ({user.age} years old)
           </div>
