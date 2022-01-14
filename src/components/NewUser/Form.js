@@ -38,9 +38,9 @@ const Form = (props) => {
   };
 
   const validate = () => {
-    if (age < 0) {
+    if (+age < 0) {
       return "Age should be more than 0"
-    } else if (age === "" || name === "") {
+    } else if (age.trim().length === 0 || name.trim().length === 0) {
       return "Age or Name must not be blank"
     } else {
       return "" //No error
