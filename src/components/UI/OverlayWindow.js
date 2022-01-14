@@ -9,7 +9,7 @@ const OverlayWindow = (props) => {
         <h3>Invalid input</h3>
         <p>{props.paragraph}</p>
         <div className={styles.button}>
-          <button onClick={() => props.setIsInvalid(false)}> Ok </button>
+          <Button title={"Okay"} setIsInvalid={props.setIsInvalid}></Button>
         </div>
       </div>
     </div>
